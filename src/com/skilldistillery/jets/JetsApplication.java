@@ -1,20 +1,28 @@
 package com.skilldistillery.jets;
 
+import java.util.Scanner;
+
 public class JetsApplication {
 
 	public static void main(String[] args) {
 		JetsApplication app = new JetsApplication();
-		app.runApp();
+		Scanner kb = new Scanner(System.in);
+		app.runApp(kb);		
+		
+		kb.close();
 	}
 
 	// create new airfield
-	private void runApp() {
-		Airfield af1 = new Airfield();
-	}
-
-	// generate and display menu
-	private void showMenu() {
+	private void runApp(Scanner kb) {
+		Airfield af = new Airfield();
+		Menu menu = new Menu();
 		
-	}
+		boolean loop = true;
+		
+		while (loop) {			
+			loop = menu.showMenu(kb, af);
+		}
+		
 
+	}
 }

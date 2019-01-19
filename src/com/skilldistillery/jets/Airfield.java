@@ -15,6 +15,7 @@ public class Airfield {
 			if (jet != null) {
 				System.out.println(jet.getModel());
 			} else {
+				System.out.println("");
 				break;
 			}
 		}
