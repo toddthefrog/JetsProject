@@ -1,14 +1,14 @@
 package com.skilldistillery.jets;
 
-public class FighterJet extends Jet {
+public class FighterPlane extends Plane {
 
 	// default constructor
-	public FighterJet() {
+	public FighterPlane() {
 
 	}
 
 	// all parameters constructor
-	public FighterJet(String model, double speed, int range, long price) {
+	public FighterPlane(String model, double speed, int range, long price) {
 		super(model, speed, range, price);
 		// TODO Auto-generated constructor stub
 	}

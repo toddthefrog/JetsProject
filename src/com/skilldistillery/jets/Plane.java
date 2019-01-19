@@ -1,18 +1,18 @@
 package com.skilldistillery.jets;
 
-abstract public class Jet {
+abstract public class Plane {
 	private String model;
 	private double speed;
 	private int range;
 	private long price;
 
 	// default constructor
-	public Jet() {
+	public Plane() {
 		super();
 	}
 
 	// all parameters constructor
-	public Jet(String model, double speed, int range, long price) {
+	public Plane(String model, double speed, int range, long price) {
 		super();
 		this.model = model;
 		this.speed = speed;

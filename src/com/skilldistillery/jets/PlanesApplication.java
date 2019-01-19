@@ -2,11 +2,11 @@ package com.skilldistillery.jets;
 
 import java.util.Scanner;
 
-public class JetsApplication {
+public class PlanesApplication {
 
 	// main
 	public static void main(String[] args) {
-		JetsApplication app = new JetsApplication();
+		PlanesApplication app = new PlanesApplication();
 		Scanner kb = new Scanner(System.in);
 		app.runApp(kb);
 		

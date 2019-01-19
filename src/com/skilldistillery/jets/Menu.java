@@ -6,14 +6,15 @@ public class Menu {
 	public boolean showMenu(Scanner kb, Airfield af) {
 		boolean loop = true;
 
+		System.out.println("The Aircraft of World War 2 Catalog\n");
 		System.out.println("Please make a selection: ");
 		System.out.println("\t1. List Fleet\n");
-		System.out.println("\t2. Fly All Jets\n");
-		System.out.println("\t3. View Fastest Jet\n");
-		System.out.println("\t4. View Jet With Longest Range\n");
-		System.out.println("\t5. Load All Cargo Jets\n");
+		System.out.println("\t2. Fly All Aircraft\n");
+		System.out.println("\t3. View Fastest Aircraft\n");
+		System.out.println("\t4. View Aircraft By Range\n");
+		System.out.println("\t5. Load All Cargo Aircraft\n");
 		System.out.println("\t6. Dogfight\n");
-		System.out.println("\t7. Add A Jet To Fleet\n");
+		System.out.println("\t7. Add An Aircraft To The Fleet\n");
 		System.out.println("\t8. Quit\n");
 
 		int selection = kb.nextInt();

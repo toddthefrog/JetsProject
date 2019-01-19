@@ -1,6 +1,6 @@
 package com.skilldistillery.jets;
 
-public class CargoPlane extends Jet {
+public class CargoPlane extends Plane {
 
 	// default constructor
 	public CargoPlane() {
