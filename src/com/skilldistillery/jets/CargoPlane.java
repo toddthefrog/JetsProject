@@ -8,8 +8,8 @@ public class CargoPlane extends Plane {
 	}
 
 	// all parameters constructor
-	public CargoPlane(String model, double speed, int range, long price) {
-		super(model, speed, range, price);
+	public CargoPlane(String model, String name, double maxSpeed, double cruisingSpeed, int range, long price) {
+		super(model, name, maxSpeed, cruisingSpeed, range, price);
 	}
 
 }

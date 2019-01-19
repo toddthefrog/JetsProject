@@ -1,8 +1,11 @@
 package com.skilldistillery.jets;
 
 abstract public class Plane {
+	
 	private String model;
-	private double speed;
+	private String name;
+	private double maxSpeed;
+	private double cruisingSpeed;
 	private int range;
 	private long price;
 
@@ -12,16 +15,19 @@ abstract public class Plane {
 	}
 
 	// all parameters constructor
-	public Plane(String model, double speed, int range, long price) {
+	public Plane(String model,String name, double maxSpeed, double cruisingSpeed, int range, long price) {
 		super();
 		this.model = model;
-		this.speed = speed;
+		this.name = name;
+		this.maxSpeed = maxSpeed;
+		this.cruisingSpeed = cruisingSpeed;
 		this.range = range;
 		this.price = price;
 	}
 	
+	// create string of plane parameters
 	public String listFleet() {
-		String s = "Model: " + this.model + " Speed: " + this.speed + " Range: " + this.range + " Price: " + this.price;
+		String s = "Model: " + this.model + " Name: " + this.name + " Max Speed: " + this.maxSpeed + " Cruising Speed: " + cruisingSpeed + " Range: " + this.range + " Price: " + this.price;
 		
 		return s;
 	}
@@ -36,11 +42,11 @@ abstract public class Plane {
 	}
 
 	public double getSpeed() {
-		return speed;
+		return maxSpeed;
 	}
 
 	public void setSpeed(double speed) {
-		this.speed = speed;
+		this.maxSpeed = speed;
 	}
 
 	public int getRange() {
