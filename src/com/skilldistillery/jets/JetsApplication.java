@@ -4,10 +4,11 @@ import java.util.Scanner;
 
 public class JetsApplication {
 
+	// main
 	public static void main(String[] args) {
 		JetsApplication app = new JetsApplication();
 		Scanner kb = new Scanner(System.in);
-		app.runApp(kb);		
+		app.runApp(kb);
 		
 		kb.close();
 	}
@@ -19,10 +20,10 @@ public class JetsApplication {
 		
 		boolean loop = true;
 		
+		// while loop is true show menu
 		while (loop) {			
 			loop = menu.showMenu(kb, af);
 		}
-		
 
 	}
 }

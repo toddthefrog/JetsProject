@@ -19,6 +19,12 @@ abstract public class Jet {
 		this.range = range;
 		this.price = price;
 	}
+	
+	public String listFleet() {
+		String s = "Model: " + this.model + " Speed: " + this.speed + " Range: " + this.range + " Price: " + this.price;
+		
+		return s;
+	}
 
 	// generate setters and getters
 	public String getModel() {

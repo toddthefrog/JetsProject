@@ -7,7 +7,7 @@ public class Menu {
 		boolean loop = true;
 
 		System.out.println("Please make a selection: ");
-		System.out.println("\t1. List Jets\n");
+		System.out.println("\t1. List Fleet\n");
 		System.out.println("\t2. Fly All Jets\n");
 		System.out.println("\t3. View Fastest Jet\n");
 		System.out.println("\t4. View Jet With Longest Range\n");
@@ -20,7 +20,8 @@ public class Menu {
 
 		switch (selection) {
 		case 1:
-			af.listJets();
+			clearScreen();
+			af.listFleet();
 			loop = subMenu(kb, af);
 			break;
 //		case 2:
@@ -50,27 +51,36 @@ public class Menu {
 		}
 		return loop;
 	}
-	
+
 	private boolean subMenu(Scanner kb, Airfield af) {
 		boolean loop = true;
-		
+
 		System.out.println("Please make a selection: ");
 		System.out.println("\t1. Return To Main Menu");
 		System.out.println("\t2. Quit");
 		int selection = kb.nextInt();
-		
+
 		switch (selection) {
 		case 1:
 			loop = true;
+			clearScreen();
 			break;
 		case 2:
+			clearScreen();
 			System.out.println("Adios");
 			loop = false;
 			break;
-			
+
 		default:
 			break;
 		}
 		return loop;
 	}
+
+	private void clearScreen() {
+		for (int i = 0; i < 20; i++) {
+			System.out.println("\n");
+		}
+	}
+
 }

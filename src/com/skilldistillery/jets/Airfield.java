@@ -9,11 +9,11 @@ public class Airfield {
 		jetArray[1] = new CargoPlane("C-130", 300, 500, 1_000_000);
 	}
 
-	public void listJets() {
+	public void listFleet() {
 
 		for (Jet jet : jetArray) {
 			if (jet != null) {
-				System.out.println(jet.getModel());
+				System.out.println(jet.listFleet());
 			} else {
 				System.out.println("");
 				break;
