@@ -22,7 +22,7 @@ public class Menu {
 		switch (selection) {
 		case 1:
 			clearScreen();
-			af.listFleet();
+			af.displayFleet();
 			loop = subMenu(kb, af);
 			break;
 //		case 2:
