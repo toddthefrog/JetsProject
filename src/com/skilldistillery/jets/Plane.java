@@ -25,6 +25,8 @@ abstract public class Plane {
 		this.price = price;
 	}
 	
+	// default Plane toString
+	// to be overridden by subclasses if new parameters are added
 	public String toString() {
 		return "Model: " + model + " Name: " + name + " Max Speed: " + maxSpeed + " Cruising Speed: "
 				+ cruisingSpeed + " Range: " + range + " Price " + price;
