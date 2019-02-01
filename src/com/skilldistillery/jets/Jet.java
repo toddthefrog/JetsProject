@@ -1,6 +1,6 @@
 package com.skilldistillery.jets;
 
-abstract public class Plane {
+abstract public class Jet {
 
 	private String model;
 	private String name;
@@ -10,12 +10,12 @@ abstract public class Plane {
 	private long price;
 
 	// default constructor
-	public Plane() {
+	public Jet() {
 		super();
 	}
 
 	// all parameters constructor
-	public Plane(String model, String name, double maxSpeed, double cruisingSpeed, int range, long price) {
+	public Jet(String model, String name, double maxSpeed, double cruisingSpeed, int range, long price) {
 		super();
 		this.model = model;
 		this.name = name;
@@ -24,12 +24,12 @@ abstract public class Plane {
 		this.range = range;
 		this.price = price;
 	}
-	
+
 	// default Plane toString
 	// to be overridden by subclasses if new parameters are added
 	public String toString() {
-		return "Model: " + model + " Name: " + name + " Max Speed: " + maxSpeed + " Cruising Speed: "
-				+ cruisingSpeed + " Range: " + range + " Price " + price;
+		return "[model] " + model + " " + name + " [max speed] " + maxSpeed + " [cruising speed] " + cruisingSpeed
+				+ " [range] " + range + " [price] " + price;
 	}
 
 	public String getModel() {
